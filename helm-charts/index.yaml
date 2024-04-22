@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  standard-workload:
+  - apiVersion: v2
+    appVersion: 0.1.0-dev.0.main.02cd158f
+    created: "2024-04-22T14:23:22.937776216Z"
+    description: Standard workload for benchmarking k8s Nodes and Workloads
+    digest: 9aae3e122ae2c62c7bd51c3ea51a3c4f67560b6729f64283753225c69e4f8ae0
+    name: standard-workload
+    type: application
+    urls:
+    - https://glaciation-heu.github.io/standard-workload/helm-charts/standard-workload-0.1.0-dev.0.main.02cd158f.tgz
+    version: 0.1.0-dev.0.main.02cd158f
+generated: "2024-04-22T14:23:22.937375585Z"
