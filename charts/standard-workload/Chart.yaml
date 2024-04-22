@@ -1,0 +1,6 @@
+apiVersion: v2
+name: standard-workload
+description: Standard workload for benchmarking k8s Nodes and Workloads
+type: application
+version: "0.0.0"
+appVersion: "0.0.0"

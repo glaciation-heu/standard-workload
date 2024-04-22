@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: ""
+  tag: ""
+  pullPolicy: IfNotPresent
+
+resources:
+  limits:
+    cpu: "5"
+    memory: "1024Mi"
+    ephemeral-storage: "600Mi"
+  requests:
+    cpu: "3"
+    memory: "800Mi"
+    ephemeral-storage: "500Mi"
