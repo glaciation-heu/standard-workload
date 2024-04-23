@@ -1,6 +1,8 @@
 FROM ubuntu:latest
 
-RUN apt-get update && apt-get install -y gcc make mpich wget tar
+RUN apt-get update && \
+    apt-get install -y gcc make mpich wget tar && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN mkdir /code
 WORKDIR /code

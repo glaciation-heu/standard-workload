@@ -23,7 +23,7 @@ helm install standard-workload standard-workload-repo/standard-workload
 1. Install [Minikube](https://minikube.sigs.k8s.io/docs/start/).
 2. Start Minikube:
 ```bash
-minikube start
+minikube start --cpus 4 --memory 8192
 ```
 1. Build a docker image:
 ```bash
@@ -35,10 +35,7 @@ minikube image load standard-workload:latest
 ```
 1.  Deploy the job:
 ```bash
-helm install standard-workload ./charts/standard-workload
-  --version 0.1.0
-  --set image.repository=standard-workload
-  --set image.tag=latest
+helm install standard-workload ./charts/standard-workload --version 0.1.0 --set image.repository=standard-workload --set image.tag=latest
 ```
 1. Delete the job:
 ```bash

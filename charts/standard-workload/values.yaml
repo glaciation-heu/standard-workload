@@ -7,10 +7,10 @@ image:
 
 resources:
   limits:
-    cpu: "5"
-    memory: "1024Mi"
+    cpu: "4"
+    memory: "8192Mi"
     ephemeral-storage: "600Mi"
   requests:
     cpu: "3"
-    memory: "800Mi"
+    memory: "7168Mi"
     ephemeral-storage: "500Mi"
