@@ -1,8 +1,17 @@
 # Standard workload
-The standard workload for assessing the energy efficiency of a Kubernetes node.   
+The standard workload for computing the energy efficiency of a Kubernetes node.   
 Based on the [NAS Parallel Benchmarks](https://www.nas.nasa.gov/software/npb.html).
 
 ## Usage
+Run this workload on a Kubernetes node and measure the energy efficiency.  
+To improve measurement accuracy, the node should not be running any other workloads.
+
+```bash
+helm repo add standard-workload-repo https://glaciation-heu.github.io/standard-workload/helm-charts/
+helm repo update
+helm search repo standard-workload
+helm install standard-workload standard-workload-repo/standard-workload
+```
 
 ## Manual build and deployment on Minikube
 ### Prerequisites
@@ -18,11 +27,11 @@ minikube start
 ```
 1. Build a docker image:
 ```bash
-docker build . -t standart-workload:latest
+docker build . -t standard-workload:latest
 ```
 1. Upload the docker image to minikube:
 ```bash
-minikube image load standart-workload:latest
+minikube image load standard-workload:latest
 ```
 1.  Deploy the job:
 ```bash
